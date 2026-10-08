@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pramuka Explorer — Belajar Kepramukaan</title>
+  <meta name="description" content="Website pembelajaran kepramukaan: materi, sandi Morse, semaphore, dan kuis interaktif.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home">🏕️ <span>Pramuka<br><small>EXPLORER</small></span></a>
+  <button class="menu" aria-label="Buka menu">☰</button>
+  <nav>
+    <a href="#home">Beranda</a>
+    <a href="#materi">Materi</a>
+    <a href="#sandi">Sandi</a>
+    <a href="#kegiatan">Kegiatan</a>
+    <a href="#kuis">Kuis</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">SATYA • DARMA • KARYA</p>
+    <h1>Belajar Pramuka,<br><span>Siap Berkarya.</span></h1>
+    <p>Ruang belajar digital untuk mengenal dasar-dasar kepramukaan, sandi, keterampilan lapangan, dan nilai-nilai Dasa Darma.</p>
+    <div class="actions">
+      <a class="btn primary" href="#materi">Mulai Belajar →</a>
+      <a class="btn ghost" href="#kuis">Coba Kuis</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="compass">✦</div>
+    <div class="camp">⛺</div>
+    <p>“Ikhlas bakti bina bangsa, berbudi bawa laksana.”</p>
+  </div>
+</section>
+
+<section class="stats">
+  <div><b>4+</b><span>Topik Utama</span></div>
+  <div><b>2</b><span>Sandi Interaktif</span></div>
+  <div><b>5</b><span>Soal Kuis</span></div>
+  <div><b>100%</b><span>Responsif</span></div>
+</section>
+
+<section id="materi" class="section">
+  <div class="section-head"><p class="eyebrow">MATERI</p><h2>Jelajahi Dunia Kepramukaan</h2><p>Pahami dasar-dasarnya, lalu asah keterampilanmu.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">⚜️</div><h3>Tri Satya & Dasa Darma</h3><p>Mengenal janji dan pedoman moral anggota Pramuka.</p></article>
+    <article class="card"><div class="icon">🧭</div><h3>Navigasi Darat</h3><p>Dasar arah mata angin, kompas, dan orientasi medan.</p></article>
+    <article class="card"><div class="icon">⛺</div><h3>Keterampilan Lapangan</h3><p>Pengetahuan dasar perkemahan, simpul, dan pioneering.</p></article>
+    <article class="card"><div class="icon">🔥</div><h3>Survival Dasar</h3><p>Prinsip keselamatan dan kesiapan menghadapi kondisi lapangan.</p></article>
+  </div>
+</section>
+
+<section id="sandi" class="section dark">
+  <div class="section-head"><p class="eyebrow">SANDI PRAMUKA</p><h2>Latihan Sandi Morse</h2><p>Ketik huruf atau kata untuk mengubahnya menjadi kode Morse.</p></div>
+  <div class="morse-box">
+    <input id="morseInput" placeholder="Contoh: PRAMUKA" maxlength="60">
+    <button class="btn primary" id="morseBtn">Terjemahkan</button>
+    <div id="morseOutput" class="output">Hasil Morse akan muncul di sini…</div>
+    <p class="tip">Tips: gunakan spasi untuk memisahkan kata.</p>
+  </div>
+  <div class="semaphore">
+    <h3>Semaphore</h3>
+    <p>Semaphore menggunakan posisi dua bendera untuk mewakili huruf. Pelajari urutan hurufnya melalui latihan langsung bersama pembina atau regumu.</p>
+  </div>
+</section>
+
+<section id="kegiatan" class="section">
+  <div class="section-head"><p class="eyebrow">KEGIATAN</p><h2>Belajar dengan Pengalaman</h2></div>
+  <div class="timeline">
+    <div><span>01</span><h3>Latihan Rutin</h3><p>Latihan keterampilan, baris-berbaris, dan kerja sama regu.</p></div>
+    <div><span>02</span><h3>Perkemahan</h3><p>Melatih kemandirian, tanggung jawab, disiplin, dan kepedulian.</p></div>
+    <div><span>03</span><h3>Bakti Sosial</h3><p>Menerapkan nilai pengabdian melalui kegiatan positif di masyarakat.</p></div>
+  </div>
+</section>
+
+<section id="kuis" class="section quiz-section">
+  <div class="section-head"><p class="eyebrow">UJI PEMAHAMAN</p><h2>Kuis Pramuka</h2><p>Jawab 5 pertanyaan berikut dan lihat skormu.</p></div>
+  <div id="quiz"></div>
+  <button class="btn primary" id="submitQuiz">Lihat Nilai</button>
+  <div id="score" class="score" hidden></div>
+</section>
+</main>
+
+<footer>
+  <div><b>🏕️ Pramuka Explorer</b><p>Media belajar kepramukaan sederhana dan interaktif.</p></div>
+  <p>© 2026 Pramuka Explorer</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
